@@ -38,19 +38,19 @@ Before running the game, ensure that you have a C++ compiler installed on your s
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/tic-tac-toe.git
+   git clone https://github.com/MohammadrezaAmani/TicTocToe
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd tic-tac-toe
+   cd TicTocToe
    ```
 
 3. Compile the code using your C++ compiler:
 
    ```bash
-   g++ -o tic_tac_toe tic_tac_toe.cpp
+   g++ -o tic_tac_toe main.cpp
    ```
 
 4. Run the executable:
