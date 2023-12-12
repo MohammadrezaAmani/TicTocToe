@@ -94,10 +94,69 @@ Before running the game, ensure that you have a C++ compiler installed on your s
 
 ## Examples
 
-Here's an example of how to run the game:
+Here's an example of how of using game:
 
-```bash
-./tic_tac_toe
+```cpp
+int main()
+{
+    TicTacToe game;
+    int currentPlayer = 1;
+
+    while (true)
+    {
+        game.printBoard();
+
+        if (currentPlayer == 1)
+        {
+            std::cout << "Player 1, enter your move (row and column): ";
+            int row, col;
+            std::cin >> row >> col;
+
+            if (game.makeMove(row - 1, col - 1, currentPlayer))
+            {
+                if (game.checkWin(currentPlayer))
+                {
+                    game.printBoard();
+                    std::cout << "Player 1 wins!" << std::endl;
+                    break;
+                }
+                else if (game.isBoardFull())
+                {
+                    game.printBoard();
+                    std::cout << "It's a tie!" << std::endl;
+                    break;
+                }
+            }
+            else
+            {
+                std::cout << "Invalid move. Try again." << std::endl;
+                continue;
+            }
+        }
+        else
+        {
+            game.makeAIMove();
+
+            if (game.checkWin(2))
+            {
+                game.printBoard();
+                std::cout << "AI wins!" << std::endl;
+                break;
+            }
+            else if (game.isBoardFull())
+            {
+                game.printBoard();
+                std::cout << "It's a tie!" << std::endl;
+                break;
+            }
+        }
+
+        currentPlayer = (currentPlayer == 1) ? 2 : 1;
+    }
+
+    return 0;
+}
+
 ```
 
 Follow the on-screen instructions to make your moves and enjoy the game!
