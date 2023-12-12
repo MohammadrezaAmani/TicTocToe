@@ -1,3 +1,7 @@
+_I apologize if this project was written at a time when I did not have enough knowledge to write it correctly and optimally, and now I do not have the time. I'd be happy if you could fork and improve the project._
+
+---
+
 # TicTocToe
 [X/O](https://en.wikipedia.org/wiki/Tic-tac-toe) game in [C++](https://en.cppreference.com/w/) 
 ## How to use
