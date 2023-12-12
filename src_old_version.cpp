@@ -1,4 +1,4 @@
-/* --------------------------show photo in terminal------------------------
+/* --------------------------tic toc toe with c++------------------------
 author : Mohammadreza Amani
 GitHub : https://www.github.com/MohammadrezaAmani
 Linkedin : https://www.linkedin.com/in/mohammadreza-amani/
