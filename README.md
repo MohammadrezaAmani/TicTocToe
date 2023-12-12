@@ -1,68 +1,111 @@
-# TicTacToe++
+# Tic-Tac-Toe with Minimax and Alpha-Beta Pruning
 
-Welcome to TicTacToe++, an improved version of the classic [Tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe) game implemented in modern [C++](https://en.cppreference.com/w/). This project has undergone significant enhancements, including the incorporation of object-oriented programming principles and performance optimizations to provide a faster and more enjoyable gaming experience.
+Welcome to the Tic-Tac-Toe game implemented in C++ with Minimax algorithm and Alpha-Beta Pruning! This console-based game allows you to play against an AI opponent that uses the Minimax algorithm with Alpha-Beta Pruning to make optimal moves.
+
+## Table of Contents
+
+- [Tic-Tac-Toe with Minimax and Alpha-Beta Pruning](#tic-tac-toe-with-minimax-and-alpha-beta-pruning)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [How to Play](#how-to-play)
+    - [Player Moves](#player-moves)
+    - [AI Moves](#ai-moves)
+  - [Game Features](#game-features)
+    - [Print Board](#print-board)
+    - [Check Win](#check-win)
+    - [Make Move](#make-move)
+    - [Minimax Algorithm](#minimax-algorithm)
+    - [Alpha-Beta Pruning](#alpha-beta-pruning)
+  - [Examples](#examples)
+  - [Contributing](#contributing)
+  - [License](#license)
+
+## Introduction
+
+This Tic-Tac-Toe game is implemented in C++ and features a simple console interface. The AI opponent is powered by the Minimax algorithm, a decision-making algorithm widely used in two-player games. The implementation also includes Alpha-Beta Pruning to optimize the search space and improve performance.
+
+## Getting Started
+
+### Prerequisites
+
+Before running the game, ensure that you have a C++ compiler installed on your system.
+
+### Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/tic-tac-toe.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd tic-tac-toe
+   ```
+
+3. Compile the code using your C++ compiler:
+
+   ```bash
+   g++ -o tic_tac_toe tic_tac_toe.cpp
+   ```
+
+4. Run the executable:
+
+   ```bash
+   ./tic_tac_toe
+   ```
 
 ## How to Play
 
-To get started, follow these simple steps:
+### Player Moves
 
-1. Clone the repository to your local machine.
+- Enter your move by specifying the row and column (1-3) when prompted.
 
-   ```bash
-   git clone https://github.com/MohammadrezaAmani/TicTocToe.git
-   ```
+### AI Moves
 
-2. Compile the `src.cpp` file using your preferred C++ compiler (e.g., [gcc](https://gcc.gnu.org/)).
-
-   ```bash
-   g++ main.cpp -o TicTacToe
-   ```
-
-3. Run the compiled executable.
-
-   ```bash
-   ./TicTacToe
-   ```
+- The AI opponent uses the Minimax algorithm to make optimal moves.
+- Watch out for strategic plays, as the AI aims to win or force a tie.
 
 ## Game Features
 
-### Game Modes
+### Print Board
 
-Choose from multiple game modes to suit your preference:
+- The `printBoard` function displays the current state of the Tic-Tac-Toe board.
 
-- **Player vs Player (PvP):**
-  Engage in a classic duel with your friend.
+### Check Win
 
-- **Player vs Computer (PvC):**
-  Challenge the computer with advanced game logic.
+- The `checkWin` function checks if a player has won the game.
 
-- **Exit:**
-  Quit the game whenever you wish.
+### Make Move
 
-### Game Interface
+- The `makeMove` function allows players to make a move on the board.
 
-#### Game Menu
+### Minimax Algorithm
 
-![Game Menu](media/menu.png)
-The game menu presents three buttons for selecting the desired mode.
+- The `minimax` function implements the Minimax algorithm for decision-making.
 
-#### Game Board
+### Alpha-Beta Pruning
 
-![Game Board](media/gameBoard.png)
-The game board features a 3x3 grid with interactive buttons to make your moves.
+- The Minimax algorithm is enhanced with Alpha-Beta Pruning for improved efficiency.
 
-#### Selection
+## Examples
 
-![Selection](media/select.png)
-Enter the number of the button in the terminal to make your move.
+Here's an example of how to run the game:
 
-#### End of the Game
+```bash
+./tic_tac_toe
+```
 
-![End Game](media/tied.png)
-Experience the thrill of victory, the agony of defeat, or the satisfaction of a tie.
+Follow the on-screen instructions to make your moves and enjoy the game!
 
-## Project Details
+## Contributing
 
-As part of my university project, this TicTacToe++ implementation embraces modern programming practices, including object-oriented design, to deliver an improved gaming experience.
+Contributions are welcome! If you have ideas for improvements or find any issues, please open an issue or submit a pull request.
 
-Feel free to explore the code, contribute, or provide feedback. Let's make TicTacToe++ even better together!
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
