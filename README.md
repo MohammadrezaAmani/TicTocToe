@@ -1,25 +1,68 @@
-_I apologize if this project was written at a time when I did not have enough knowledge to write it correctly and optimally, and now I do not have the time. I'd be happy if you could fork and improve the project._
+# TicTacToe++
 
----
+Welcome to TicTacToe++, an improved version of the classic [Tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe) game implemented in modern [C++](https://en.cppreference.com/w/). This project has undergone significant enhancements, including the incorporation of object-oriented programming principles and performance optimizations to provide a faster and more enjoyable gaming experience.
 
-# TicTocToe
-[X/O](https://en.wikipedia.org/wiki/Tic-tac-toe) game in [C++](https://en.cppreference.com/w/) 
-## How to use
-- clone the repository and run the src.cpp using [gcc](https://gcc.gnu.org/) or other cpp comilers
-#### details
-- because this is my project in university, i use no graphic for this project.
-### GamePlay
-> ![game munu](https://github.com/MohammadrezaAmani/TicTocToe/blob/main/media/menu.png)
-- Game menu contains 3 buttons:
-  - PvP mode: play with your friend.
-  - PvComputer: play against Computer and my Game Logic.
-  - Exit: quit the game.
-### GameBoard
-> ![game Board](https://github.com/MohammadrezaAmani/TicTocToe/blob/main/media/gameBoard.png)
-- game Board of the game, contains 9 buttons
-### Select
-> ![select](https://github.com/MohammadrezaAmani/TicTocToe/blob/main/media/select.png)
-- enter the number of button in terminal and it will be selected.
-### End of the Game
-> ![End Game](https://github.com/MohammadrezaAmani/TicTocToe/blob/main/media/tied.png)
-- lose, win or tie
+## How to Play
+
+To get started, follow these simple steps:
+
+1. Clone the repository to your local machine.
+
+   ```bash
+   git clone https://github.com/MohammadrezaAmani/TicTocToe.git
+   ```
+
+2. Compile the `src.cpp` file using your preferred C++ compiler (e.g., [gcc](https://gcc.gnu.org/)).
+
+   ```bash
+   g++ main.cpp -o TicTacToe
+   ```
+
+3. Run the compiled executable.
+
+   ```bash
+   ./TicTacToe
+   ```
+
+## Game Features
+
+### Game Modes
+
+Choose from multiple game modes to suit your preference:
+
+- **Player vs Player (PvP):**
+  Engage in a classic duel with your friend.
+
+- **Player vs Computer (PvC):**
+  Challenge the computer with advanced game logic.
+
+- **Exit:**
+  Quit the game whenever you wish.
+
+### Game Interface
+
+#### Game Menu
+
+![Game Menu](media/menu.png)
+The game menu presents three buttons for selecting the desired mode.
+
+#### Game Board
+
+![Game Board](media/gameBoard.png)
+The game board features a 3x3 grid with interactive buttons to make your moves.
+
+#### Selection
+
+![Selection](media/select.png)
+Enter the number of the button in the terminal to make your move.
+
+#### End of the Game
+
+![End Game](media/tied.png)
+Experience the thrill of victory, the agony of defeat, or the satisfaction of a tie.
+
+## Project Details
+
+As part of my university project, this TicTacToe++ implementation embraces modern programming practices, including object-oriented design, to deliver an improved gaming experience.
+
+Feel free to explore the code, contribute, or provide feedback. Let's make TicTacToe++ even better together!
